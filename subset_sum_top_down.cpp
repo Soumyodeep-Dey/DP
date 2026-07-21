@@ -9,6 +9,8 @@ bool solve(int arr[], int n, int sum)
         return 1;
     if (n == 0)
         return 0;
+    
+    // i = 1 to n and j = 1 to sum
     for (int i = 1; i <= n; i++)
     {
         for (int j = 1; j <= sum; j++)
@@ -23,6 +25,7 @@ bool solve(int arr[], int n, int sum)
             }
         }
     }
+    return t[n][sum];
 }
 int main()
 {
